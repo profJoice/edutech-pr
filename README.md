@@ -1,1 +1,1 @@
-http://projeto_edutech_PR
+http://projeto_edutec_PR
