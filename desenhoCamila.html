@@ -1,0 +1,198 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+
+	var tela = document.querySelector('canvas');
+	var pincel = tela.getContext('2d');
+
+	 function petalas(x, y, raio, cor) {
+
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * 3.14);
+        pincel.fill();
+    }
+
+    function miolo(x, y, raio, cor) {
+
+    	pincel.fillStyle = cor;
+    	pincel.beginPath();
+    	pincel.arc(x, y, raio, 0, 2 * 3.14);
+    	pincel.fill();
+    }
+
+	function petalaRoxa() {
+		
+		petalas(306, 265, 20, 'purple');
+		petalas(270, 230, 20, 'purple');
+		petalas(340, 230, 20, 'purple');
+		petalas(306, 195, 20, 'purple');
+ 	}
+
+ 	function petalaAzul() {
+ 		
+ 		petalas(280, 250, 20, 'blue');
+		petalas(280, 205, 20, 'blue');
+		petalas(330, 250, 20, 'blue');
+		petalas(330, 205, 20, 'blue');
+	}
+
+	function petalaVermelhaDireita() {
+
+		petalas(106, 265, 20, 'red');
+		petalas(106, 195, 20, 'red');
+		petalas(73, 230, 20, 'red');
+		petalas(140, 230, 20, 'red');		
+	}
+
+	function petalaVermelhaEsquerda() {
+
+		petalas(506, 265, 20, 'red');
+		petalas(506, 195, 20, 'red');
+		petalas(473, 230, 20, 'red');
+		petalas(540, 230, 20, 'red');	
+	}
+
+	function petalaRosaEsquerda() {
+
+		petalas(476, 256, 20, 'pink');
+		petalas(536, 256, 20, 'pink');
+		petalas(476, 206, 20, 'pink');
+		petalas(536, 206, 20, 'pink');
+	}
+
+	function petalaRosaDireita() {
+
+		petalas(77, 256, 20, 'pink');
+		petalas(133, 256, 20, 'pink');
+		petalas(77, 206, 20, 'pink');
+		petalas(133, 206, 20, 'pink');
+	}
+
+	function nuvem(x, y, raio, cor) {
+		
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * 3.14);
+        pincel.fill();
+	}
+
+	function nuvens() {
+
+		var cor = 'white';
+
+		// nuvem da direita
+			nuvem(100, 80, 20, cor);
+			nuvem(130, 80, 20, cor);
+			nuvem(160, 80, 20, cor);
+			nuvem(100, 110, 20, cor);
+			nuvem(130, 110, 20, cor);
+			nuvem(160, 110, 20, cor);
+			nuvem(105, 95, 20, cor);
+			nuvem(155, 95, 20, cor);
+			nuvem(85, 95, 20, cor);
+			nuvem(175, 95, 20, cor);
+
+		// nuvem da esquerda
+			nuvem(450, 70, 20, cor);
+			nuvem(480, 70, 20, cor);
+			nuvem(510, 70, 20, cor);
+			nuvem(450, 100, 20, cor);
+			nuvem(480, 100, 20, cor);
+			nuvem(510, 100, 20, cor);
+			nuvem(455, 95, 20, cor);
+			nuvem(485, 95, 20, cor);
+			nuvem(435, 88, 20, cor);
+			nuvem(525, 88, 20, cor);
+
+		// nuvem do meio
+			nuvem(276, 115, 20, cor);
+			nuvem(306, 115, 20, cor);
+			nuvem(336, 115, 20, cor);
+			nuvem(276, 145, 20, cor);
+			nuvem(306, 145, 20, cor);
+			nuvem(336, 145, 20, cor);
+			nuvem(281, 140, 20, cor);
+			nuvem(311, 140, 20, cor);
+			nuvem(261, 133, 20, cor);
+			nuvem(351, 133, 20, cor);		
+		
+	}
+
+	function solPartes(x, y, raio, cor) {
+
+		pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * 3.14);
+        pincel.fill();
+	}
+
+	// céu
+		pincel.fillStyle = 'lightblue';
+		pincel.fillRect(0, 0, 600, 400);
+
+	// chão
+		pincel.fillStyle = 'green';
+		pincel.fillRect(0, 360, 600, 400);
+
+	// cabo da flor - meio
+		pincel.fillStyle = 'green';
+		pincel.fillRect(300, 250, 15, 150);
+
+	// cabo da flor - direita
+		pincel.fillStyle = 'green';
+		pincel.fillRect(100, 250, 15, 150);
+
+	// cabo da flor - esquerda
+		pincel.fillStyle = 'green';
+		pincel.fillRect(500, 250, 15, 150);
+
+ 	// folhinha - meio
+ 		pincel.fillStyle = 'green';
+ 		pincel.fillRect(306, 310, 40, 20);
+
+ 	// folhinha - direita
+ 		pincel.fillStyle = 'green';
+ 		pincel.fillRect(106, 310, 40, 20);
+
+ 	// folhinha - esquerda
+ 		pincel.fillStyle = 'green';
+ 		pincel.fillRect(506, 310, 40, 20);
+
+ 	// linha preta - meio
+ 		pincel.fillStyle = 'black';
+ 		pincel.fillRect(315, 318, 30, 3);
+
+ 	// linha preta - direita
+ 		pincel.fillStyle = 'black';
+ 		pincel.fillRect(115, 318, 30, 3);
+
+ 	// linha preta - esquerda
+ 		pincel.fillStyle = 'black';
+ 		pincel.fillRect(515, 318, 30, 3);
+
+	// pétalas
+		petalaRosaDireita();
+		petalaVermelhaDireita();
+		petalaRosaEsquerda();
+		petalaVermelhaEsquerda();
+		petalaAzul();
+ 		petalaRoxa();
+
+ 	// centro da flor - meio
+ 		miolo(306, 230, 20, 'yellow');
+
+ 	// centro da flor - direita
+ 		miolo(106, 230, 20, 'yellow');
+
+ 	// centro da flor - esquerda
+ 		miolo(506, 230, 20, 'yellow');
+
+ 	// sol
+ 		solPartes(306, 70, 60, 'orange');
+ 		solPartes(306, 70, 40, 'yellow');
+
+ 	// nuvens
+ 		nuvens('white');
+
+</script>
