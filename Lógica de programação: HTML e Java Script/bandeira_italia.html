@@ -1,0 +1,21 @@
+<body bgcolor = "grey"></body>
+<canvas width = "600" height="400"></canvas>
+
+<script type="text/javascript">
+
+var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'green';
+    pincel.fillRect(0, 0, 600, 400);
+
+    pincel.fillStyle = 'white';
+    pincel.fillRect(200, 0, 600, 400);
+
+    pincel.fillStyle = 'red';
+    pincel.fillRect(400, 0, 600, 400);
+
+    document.write("<br><br>");
+    document.write("Para voltar, click " + "<a href= bandeiras_central.html>aqui</a>");
+
+</script>
