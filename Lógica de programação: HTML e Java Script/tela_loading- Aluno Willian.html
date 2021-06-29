@@ -1,0 +1,163 @@
+<body bgcolor = "grey"></body>
+<canvas width = "500" height="400"></canvas>
+
+<script type="text/javascript">
+
+	var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    function l(){
+    	
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(40, 150, 10, 80);
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(40, 230, 50, 10);
+
+    }
+
+    function o(){
+    	
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(100, 150, 60, 10);
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(100, 150, 10, 90);
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(100, 230, 60, 10);
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(150, 150, 10, 90);
+    }
+
+    function a(){
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(170, 150, 10, 90);
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(170, 150, 60, 10);
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(220, 150, 10, 90);
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(170, 190, 60, 10);
+    }
+
+    function d(){
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(240, 190, 10, 50);
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(290, 150, 10, 90);
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(240, 190, 60, 10);
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(240, 230, 60, 10);
+    }
+
+    function i(){
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(310, 150, 10, 90);
+
+    }
+
+    function n(){
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(330, 150, 10, 90);
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(390, 150, 10, 90);
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(340, 160, 10, 10);
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(350, 170, 10, 10);
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(360, 180, 10, 10);
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(360, 190, 10, 10);
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(370, 200, 10, 10);
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(380, 210, 10, 10);
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(380, 220, 10, 10);
+    }
+
+    function g(){
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(410, 150, 60, 10);
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(410, 150, 10, 90);
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(410, 230, 60, 10);
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(460, 200, 10, 30);
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(440, 200, 20, 10);
+
+    }
+
+    function contorno(){
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(40, 260, 430, 10);
+
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(40, 320, 430, 10);
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(40, 260, 10, 60);
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(460, 260, 10, 60);
+
+    }
+
+    var tamanho = 10;
+    function preencher(){
+
+    	pincel.fillStyle = "white";
+    	pincel.fillRect(60, 275, tamanho, 40);
+    	if(tamanho <= 390){
+    	tamanho++;
+    }
+	}
+
+    pincel.fillStyle = 'black';
+    pincel.fillRect(0, 0, 600, 400);
+
+    l();
+    o();
+    a();
+    d();
+    i();
+    n();
+    g();
+    contorno();
+    setInterval(preencher, 20);
+
+    document.write("<br><br>");
+    document.write("Para voltar, click " + "<a href= central_de_desenhos_animados.html>aqui</a>");
+
+</script>
