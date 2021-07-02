@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+<body>
+<script>
+	function media(nome,n1,n2,n3)
+	{
+		document. ("Aluno (a): " +nome+ "<br>");
+		media=Math.round((n1+n2+n3)/3);
+
+		document.write("1º trimestre: " + n1 + "<br>");
+		document.write("2º trimestre: " + n2 + "<br>");
+		document.write("3º trimestre: " + n3 + "<br>");
+		document.write("A sua média é " + media);
+
+		document.write("<br>");
+
+		if (media >= 6){
+			document.write(	"Situação: aprovado");
+			}
+
+		else {
+			document.write("Situação: Reprovado");
+			}
+
+	}
+	
+    nome= prompt("Informe o seu nome");
+	n1= parseFloat(prompt(nome+ " ,digite a sua nota do 1º Trimestre"));
+	n2= parseFloat(prompt(nome+ " ,digite a sua nota do 2º Trimestre"));
+	n3= parseFloat(prompt(nome+ " ,digite a sua nota do 3º Trimestre"));
+   media(nome,n1,n2,n3);
+   
+</script>
+</body>
